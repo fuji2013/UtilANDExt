@@ -13,6 +13,7 @@
 		BDA38FCF1AEE444E00E12670 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA38FCE1AEE444E00E12670 /* Images.xcassets */; };
 		BDA38FD21AEE444E00E12670 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDA38FD01AEE444E00E12670 /* LaunchScreen.xib */; };
 		BDA38FDE1AEE444E00E12670 /* UtilANDExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA38FDD1AEE444E00E12670 /* UtilANDExtTests.swift */; };
+		BDA38FEF1AEE4C0400E12670 /* GlobalFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA38FEE1AEE4C0400E12670 /* GlobalFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		BDA38FD71AEE444E00E12670 /* UtilANDExtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilANDExtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA38FDC1AEE444E00E12670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDA38FDD1AEE444E00E12670 /* UtilANDExtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilANDExtTests.swift; sourceTree = "<group>"; };
+		BDA38FEE1AEE4C0400E12670 /* GlobalFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalFunction.swift; path = Common/GlobalFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		BDA38FC41AEE444E00E12670 /* UtilANDExt */ = {
 			isa = PBXGroup;
 			children = (
+				BDA38FED1AEE4BEE00E12670 /* Common */,
 				BDA38FC71AEE444E00E12670 /* AppDelegate.swift */,
 				BDA38FC91AEE444E00E12670 /* ViewController.swift */,
 				BDA38FCB1AEE444E00E12670 /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				BDA38FDC1AEE444E00E12670 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDA38FED1AEE4BEE00E12670 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BDA38FEE1AEE4C0400E12670 /* GlobalFunction.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDA38FCA1AEE444E00E12670 /* ViewController.swift in Sources */,
+				BDA38FEF1AEE4C0400E12670 /* GlobalFunction.swift in Sources */,
 				BDA38FC81AEE444E00E12670 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +423,7 @@
 				BDA38FE31AEE444E00E12670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDA38FE41AEE444E00E12670 /* Build configuration list for PBXNativeTarget "UtilANDExtTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +432,7 @@
 				BDA38FE61AEE444E00E12670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
