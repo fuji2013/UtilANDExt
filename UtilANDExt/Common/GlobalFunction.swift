@@ -30,3 +30,13 @@ func rgba(red:CGFloat = 0.0, green:CGFloat = 0.0, blue:CGFloat = 0.0, alpha:CGFl
     let color = UIColor(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: alpha)
     return color
 }
+
+/** Releaseビルドのときにはprintlnを出力しないために使うグローバル関数
+* @param printlnする文字列など
+* @return なし
+*/
+func println(object: Any) {
+    #if !RELEASE
+        Swift.println(object)
+    #endif
+}
